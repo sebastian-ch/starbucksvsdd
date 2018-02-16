@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+    background: whitesmoke;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+    background: #ffffff;
+   /* color: #ffffff; */
+    border-style: none;
+    border-radius: 0%;
+}
+
+h2 {
+    margin: 0;
+}
+
+.leaflet-popup-content {
+    line-height: 1.4;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    
+}
+
+#map {
+    /* position: absolute; */
+    width: 100%;
+    height: 85%;
+    /* margin: 10px auto 10px auto; */
+    top: 0;
+    bottom: 0;
+    background: whitesmoke;
+}
+
+.swoopy-arrow {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    width: 90%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    display: inline-block;
+    color: #001323;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+footer {
+    width: 90%;
+    margin: 10px auto 10px auto;
+}
+
+.better-legend {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    /*height: 100%; */
+    align-items: center;
+    align-self: flex-end;
+}
+
+.scale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scale-wrap {
+    padding: 15px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+
+.lrow {
+    height: 30px;
+    width: 30px;
+}
+
+.lrow-words {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

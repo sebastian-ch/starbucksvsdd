@@ -1,4 +1,4 @@
-# starbucksvsdd
+# Starbucks vs. Dunkin' Donuts Map
 
 
 This map compares the amount of Starbucks to the amount of Dunkin' Donuts for each US County. 

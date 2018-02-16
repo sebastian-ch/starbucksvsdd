@@ -1,11 +1,11 @@
 html {
     height: 100%;
     background: whitesmoke;
-    font-family: 'Noto Sans', sans-serif;
+    
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    
     margin: 0;
     padding: 0;
     height: 100%;
@@ -24,7 +24,7 @@ h2 {
 
 .leaflet-popup-content {
     line-height: 1.4;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     
 }
@@ -40,7 +40,7 @@ h2 {
 }
 
 .swoopy-arrow {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 
@@ -48,16 +48,18 @@ header {
     width: 90%;
     margin: 10px auto 10px auto;
     text-align: center;
+    /*font-size: 17px; */
     position: relative;
 }
 
 h1 {
     display: inline-block;
     color: #001323;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer {
+    font-family: 'Raleway', sans-serif;
     width: 90%;
     margin: 10px auto 10px auto;
 }

@@ -4,11 +4,17 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@_sebastianch_" />
+    <meta name="twitter:title" content="Starbucks vs. Dunkin' Donuts" />
+    <meta name="twitter:description" content="View the Map" />
+    <meta name="twitter:image" content="https://imgur.com/L7zHtwX" />
+
     <link rel="icon" href="favicon.ico?" type="image/x-icon">
     <title>Starbucks vs. Dunkin' Donuts</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
 
@@ -27,11 +33,9 @@
     <div id="map">
         <header>
             <h1>Starbucks vs. Dunkin' Donuts</h1>
-            <h4>This map compares the amount of Starbucks to the amount of 
-                Dunkin' Donuts in each US County. Counties in green have a 
-                higher percentage of Starbucks, while counties in pink have 
-                a higher percentage of Dunkin' Donuts. This map is made with
-                Leaflet and uses the AlbersUsa projection from D3.
+            <h4>This map compares the amount of Starbucks to the amount of Dunkin' Donuts in each US County. Counties in green
+                have a higher percentage of Starbucks, while counties in pink have a higher percentage of Dunkin' Donuts.
+                This map is made with Leaflet and uses the AlbersUsa projection from D3.
             </h4>
         </header>
     </div>
@@ -51,7 +55,7 @@
 
                 </div>
                 <div class='lrow-words'>
-                     <p style='color:#0a5703'>More Starbucks</p>
+                    <p style='color:#0a5703'>More Starbucks</p>
                     <p style='color:#d81860'>More Dunkin'</p>
                 </div>
             </div>
@@ -96,7 +100,8 @@
             .setView(center, 3)
             .setMinZoom(3);
 
-         map.attributionControl.addAttribution('Data gathered on 2/2/18 from <a href="http://www.poi-factory.com/" target="_blank">Poi Factory</a>');
+        map.attributionControl.addAttribution(
+            'Data gathered on 2/2/18 from <a href="http://www.poi-factory.com/" target="_blank">Poi Factory</a>');
 
         var states,
             counties,
@@ -135,7 +140,7 @@
                     }
                 })
                 .addTo(map);
-                
+
             //in case I want to show all US counties
             /*   allCounties = L.geoJson(all, {
                        style: {
@@ -146,7 +151,7 @@
                        }
                    })
                    .addTo(map); */
-                   
+
             counties = L.geoJson(counties, {
                     style: function (feature) {
                         return {
@@ -158,9 +163,9 @@
                         }
                     },
                     onEachFeature: function (feature, layer) {
-                        var popup = "<h2>" + feature.properties["NAME"].toString() + " County</h2>" + 
-                                    "<b>Total Starbucks</b>: " + feature.properties["starCount"].toString() + 
-                                    "<br><b>Total Dunkin' Donuts</b>: " + feature.properties["ddCount"].toString()
+                        var popup = "<h2>" + feature.properties["NAME"].toString() + " County</h2>" +
+                            "<b>Total Starbucks</b>: " + feature.properties["starCount"].toString() +
+                            "<br><b>Total Dunkin' Donuts</b>: " + feature.properties["ddCount"].toString()
                         layer.bindPopup(popup);
                         //layer.bringToFront();
                     }
@@ -197,7 +202,6 @@
         function getColor(d) {
             return color(d);
         }
-
     </script>
 </body>
 

@@ -1,11 +1,9 @@
 html {
     height: 100%;
     background: whitesmoke;
-    
 }
 
 body {
-    
     margin: 0;
     padding: 0;
     height: 100%;
@@ -13,7 +11,7 @@ body {
 
 .leaflet-popup-content-wrapper {
     background: #ffffff;
-   /* color: #ffffff; */
+    /* color: #ffffff; */
     border-style: none;
     border-radius: 0%;
 }
@@ -26,7 +24,6 @@ h2 {
     line-height: 1.4;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    
 }
 
 #map {
@@ -48,17 +45,19 @@ header {
     width: 80%;
     margin: 10px auto 10px auto;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     position: relative;
 }
 
 h1 {
+    font-family: 'Raleway', sans-serif;
     display: inline-block;
     color: #001323;
     margin-bottom: 0;
 }
 
 h4 {
+    font-family: 'Raleway', sans-serif;
     margin-top: 0;
     width: 50%;
     margin: 10px auto 10px auto;

@@ -94,9 +94,11 @@
 
         var states,
             counties,
+            //stats calculated from geojson
             min = -506,
             max = 252;
 
+        //scale create using simplestats.js and implemented with d3
         var color = d3.scaleLinear()
 
             .domain([-87, -63, -40, -14, 0, 13, 42, 66, 88])
@@ -127,7 +129,8 @@
                     }
                 })
                 .addTo(map);
-
+                
+            //in case I want to show all US counties
             /*   allCounties = L.geoJson(all, {
                        style: {
                            color: '#000',
@@ -144,6 +147,7 @@
                             color: '#000',
                             weight: 0.7,
                             fillOpacity: 1,
+                            //colorizes each layer based on percentage field
                             fillColor: getColor(feature.properties["percentage"])
                         }
                     },
@@ -152,6 +156,7 @@
                                     "<b>Total Starbucks</b>: " + feature.properties["starCount"].toString() + 
                                     "<br><b>Total Dunkin' Donuts</b>: " + feature.properties["ddCount"].toString()
                         layer.bindPopup(popup);
+                        //layer.bringToFront();
                     }
                 })
                 .addTo(map);

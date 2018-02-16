@@ -26,6 +26,7 @@
     <div id="map">
         <header>
             <h1>Starbucks vs. Dunkin' Donuts</h1>
+            <h4>This map compares the amount of Starbucks to the amount of Dunkin' Donuts in each US County. Counties in green have a higher percentage of Starbucks, while counties in pink have a higher percentage of Dunkin' Donuts.</h4>
         </header>
     </div>
     <footer>
@@ -80,7 +81,7 @@
             infinite: true
         });
 
-        var center = [37.8, -96];
+        var center = [42.18, -98.26];
         var map = new L.Map('map', {
                 crs: AlbersCRS,
                 zoomControl: false
@@ -89,7 +90,7 @@
             .setView(center, 3)
             .setMinZoom(3);
 
-         map.attributionControl.addAttribution('Data from <a href="http://www.poi-factory.com/" target="_blank">Poi Factory</a>');
+         map.attributionControl.addAttribution('Data gathered on 2/2/18 from <a href="http://www.poi-factory.com/" target="_blank">Poi Factory</a>');
 
         var states,
             counties,

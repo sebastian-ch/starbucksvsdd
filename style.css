@@ -45,17 +45,23 @@ h2 {
 }
 
 header {
-    width: 90%;
+    width: 80%;
     margin: 10px auto 10px auto;
     text-align: center;
-    /*font-size: 17px; */
+    font-family: 'Raleway', sans-serif;
     position: relative;
 }
 
 h1 {
     display: inline-block;
     color: #001323;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 0;
+    width: 50%;
+    margin: 10px auto 10px auto;
 }
 
 footer {

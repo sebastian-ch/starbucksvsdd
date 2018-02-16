@@ -45,19 +45,20 @@ header {
     width: 80%;
     margin: 10px auto 10px auto;
     text-align: center;
-    /* font-family: 'Raleway', sans-serif; */
+     font-family: 'Raleway', sans-serif;
     position: relative;
 }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    display: inline-block;
+.head-text {
+    font-size: 32px;
     color: #001323;
+    margin-top: 1;
     margin-bottom: 0;
 }
 
-h4 {
-    font-family: 'Raleway', sans-serif;
+.subheader {
+
+    font-size: 13px;
     margin-top: 0;
     width: 50%;
     margin: 10px auto 10px auto;
